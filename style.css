@@ -1,0 +1,126 @@
+/* style.css (Example - add to your existing style.css) */
+
+/* General Body Styles for Light Mode (assuming these exist) */
+body.light-mode {
+  background-color: #f8f9fa; /* Light background */
+  color: #212529; /* Dark text */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #212529; /* Dark background */
+  color: #f8f9fa; /* Light text */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Example: Adjusting JDM button styles for dark mode */
+.btn-jdm {
+  background-color: #007bff; /* Example light mode color */
+  color: white;
+  border-color: #007bff;
+  transition: all 0.3s ease;
+}
+
+body.dark-mode .btn-jdm {
+  background-color: #6a0dad; /* Darker, more "neon" purple */
+  border-color: #6a0dad;
+  color: white;
+  box-shadow: 0 0 10px rgba(106, 13, 173, 0.7); /* Neon glow */
+}
+
+.btn-outline-jdm {
+  color: #007bff;
+  border-color: #007bff;
+  transition: all 0.3s ease;
+}
+
+body.dark-mode .btn-outline-jdm {
+  color: #6a0dad;
+  border-color: #6a0dad;
+  box-shadow: 0 0 10px rgba(106, 13, 173, 0.7);
+}
+
+/* Adjust header and section titles for dark mode */
+.header-title, .section-title, .jdm-font {
+  color: #007bff; /* Example light mode color */
+  transition: color 0.3s ease;
+}
+
+body.dark-mode .header-title,
+body.dark-mode .section-title,
+body.dark-mode .jdm-font {
+  color: #7d2ae8; /* Brighter, more neon color for dark mode */
+  text-shadow: 0 0 10px rgba(125, 42, 232, 0.8);
+}
+
+/* Adjust student card for dark mode */
+.student-card {
+  background-color: #ffffff;
+  border: 1px solid #dee2e6;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  transition: all 0.3s ease;
+}
+
+body.dark-mode .student-card {
+  background-color: #343a40; /* Darker background for cards */
+  border-color: #495057;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.25);
+}
+
+body.dark-mode .student-card h5 {
+  color: #f8f9fa;
+}
+
+body.dark-mode .student-card p.text-muted,
+body.dark-mode .student-card small {
+  color: #ced4da !important; /* Ensure text is visible */
+}
+
+/* Adjust search input for dark mode */
+.search-input {
+  background-color: #ffffff;
+  color: #212529;
+  border: 1px solid #ced4da;
+}
+
+body.dark-mode .search-input {
+  background-color: #495057;
+  color: #f8f9fa;
+  border-color: #6c757d;
+}
+
+/* Alerts */
+.alert-jdm {
+  background-color: #e0f2f7;
+  color: #007bff;
+  border-color: #b3e0ed;
+}
+
+body.dark-mode .alert-jdm {
+  background-color: #3f007d; /* Darker background for alert */
+  color: #9f66ff; /* Lighter text for alert */
+  border-color: #5d00b3;
+}
+/* Add this to your style.css */
+.text-jdm-link {
+  color: var(--neon-blue); /* Or another neon color you prefer */
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.text-jdm-link:hover {
+  color: var(--neon-purple); /* Change color on hover */
+  text-shadow: 0 0 8px rgba(157, 0, 255, 0.7); /* Add a subtle glow on hover */
+}
+
+/* For dark mode */
+body.dark-mode .text-jdm-link {
+  color: var(--neon-orange); /* A different neon color for dark mode */
+}
+
+body.dark-mode .text-jdm-link:hover {
+  color: var(--neon-pink);
+  text-shadow: 0 0 8px rgba(255, 30, 86, 0.7);
+}
